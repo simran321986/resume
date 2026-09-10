@@ -1,0 +1,657 @@
+ ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simran Devi - Resume</title>
+
+    <style>
+
+        /* =========================
+           PAGE SETTINGS
+        ========================= */
+
+        @page {
+            size: A4;
+            margin: 0.65in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #222;
+
+            /* Similar to LaTeX Times font */
+            font-family: "Times New Roman", Times, serif;
+
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+
+        .resume {
+            width: 100%;
+            max-width: 7.27in;
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            text-align: center;
+            margin-bottom: 2px;
+        }
+
+        .name {
+            font-size: 24pt;
+            line-height: 26pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .contact {
+            color: rgb(31, 73, 125);
+            font-size: 10pt;
+        }
+
+        .contact a {
+            color: rgb(31, 73, 125);
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           SECTION HEADINGS
+        ========================= */
+
+        .section {
+            margin-top: 5px;
+        }
+
+        .section-title {
+            color: rgb(31, 73, 125);
+            font-size: 13pt;
+            font-weight: bold;
+
+            margin: 0;
+            padding: 0;
+
+            line-height: 16pt;
+        }
+
+        .section-line {
+            border: none;
+            border-top: 0.5px solid rgb(31, 73, 125);
+            margin: 1px 0 4px 0;
+        }
+
+
+        /* =========================
+           PROFESSIONAL SUMMARY
+        ========================= */
+
+        .summary {
+            margin: 0;
+            text-align: justify;
+        }
+
+
+        /* =========================
+           TWO COLUMN ROW
+        ========================= */
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .left {
+            flex: 1;
+        }
+
+        .right {
+            text-align: right;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+
+        /* =========================
+           TECHNICAL SKILLS
+        ========================= */
+
+        .skills {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills td {
+            padding: 1px 0;
+            vertical-align: top;
+        }
+
+        .skills .skill-name {
+            width: 1.75in;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience {
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-top: 3px;
+            margin-bottom: 7px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 1px;
+            padding-left: 0;
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .project {
+            margin-bottom: 7px;
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education {
+            margin-top: 0;
+        }
+
+
+        /* =========================
+           PRINT SETTINGS
+        ========================= */
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                max-width: none;
+            }
+
+        }
+
+
+        /* =========================
+           SCREEN VIEW
+        ========================= */
+
+        @media screen {
+
+            body {
+                background: #f2f2f2;
+                padding: 30px 0;
+            }
+
+            .resume {
+                background: white;
+                width: 210mm;
+                min-height: 297mm;
+
+                padding: 0.65in;
+
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="resume">
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <div class="header">
+
+        <div class="name">
+            SIMRAN DEVI
+        </div>
+
+        <div class="contact">
+
+            <span>
+                simranthappa140@gmail.com
+            </span>
+
+            &nbsp; --- &nbsp;
+
+            <span>
+                +91-9622695598
+            </span>
+
+            &nbsp; --- &nbsp;
+
+            <a href="https://linkedin.com/in/simran-thappa"
+               target="_blank">
+                linkedin.com/in/simran-thappa
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PROFESSIONAL SUMMARY
+    ========================= -->
+
+    <div class="section">
+
+        <h2 class="section-title">
+            PROFESSIONAL SUMMARY
+        </h2>
+
+        <hr class="section-line">
+
+        <p class="summary">
+            Motivated Computer Science Engineering student at Poornima College
+            of Engineering, Jaipur, with a strong interest in software development
+            and problem-solving. Skilled in Java, C, C++, Python, Data Structures
+            and Algorithms, DBMS, and web development. Experienced in web
+            development and Industrial IoT through internships, with hands-on
+            exposure to practical projects. Eager to contribute technical skills
+            while continuously learning and developing professionally.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================= -->
+
+    <div class="section">
+
+        <h2 class="section-title">
+            TECHNICAL SKILLS
+        </h2>
+
+        <hr class="section-line">
+
+        <table class="skills">
+
+            <tr>
+                <td class="skill-name">
+                    Programming
+                </td>
+
+                <td>
+                    Java, C, C++, Python
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="skill-name">
+                    Web Development
+                </td>
+
+                <td>
+                    HTML, CSS, JavaScript, Responsive Web Design
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="skill-name">
+                    Database
+                </td>
+
+                <td>
+                    MySQL, SQL, DBMS
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="skill-name">
+                    Core CS
+                </td>
+
+                <td>
+                    Data Structures &amp; Algorithms, OOP, Operating Systems
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="skill-name">
+                    Tools
+                </td>
+
+                <td>
+                    Git, GitHub, VS Code
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="skill-name">
+                    IoT
+                </td>
+
+                <td>
+                    Internet of Things, Industrial IoT (IIoT), Sensors,
+                    Embedded Systems, Data Monitoring
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- =========================
+         INTERNSHIP EXPERIENCE
+    ========================= -->
+
+    <div class="section">
+
+        <h2 class="section-title">
+            INTERNSHIP EXPERIENCE
+        </h2>
+
+        <hr class="section-line">
+
+
+        <!-- Web Development -->
+
+        <div class="experience">
+
+            <div class="row">
+
+                <div class="left bold">
+                    Web Development Intern
+                </div>
+
+                <div class="right italic">
+                    15 Days
+                </div>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    Developed and modified web pages using HTML, CSS, and JavaScript.
+                </li>
+
+                <li>
+                    Applied responsive web design principles to improve website
+                    layouts and user interfaces.
+                </li>
+
+                <li>
+                    Strengthened debugging, problem-solving, and front-end
+                    development skills through practical tasks.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- IIoT Internship -->
+
+        <div class="experience">
+
+            <div class="row">
+
+                <div class="left bold">
+                    Industrial Internet of Things (IIoT) Intern -- CSIR-CEERI
+                </div>
+
+                <div class="right italic">
+                    30 Days
+                </div>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    Learned fundamentals of Industrial IoT, smart industrial
+                    systems, and industrial automation.
+                </li>
+
+                <li>
+                    Gained hands-on exposure to IoT devices, sensors, data
+                    monitoring, and connected systems.
+                </li>
+
+                <li>
+                    Participated in technical training and hands-on activities;
+                    received an internship completion certificate.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
+    <div class="section">
+
+        <h2 class="section-title">
+            PROJECTS
+        </h2>
+
+        <hr class="section-line">
+
+
+        <!-- Project 1 -->
+
+        <div class="project">
+
+            <div class="row">
+
+                <div class="left bold">
+                    Smart Product Recommendation System
+                </div>
+
+                <div class="right italic">
+                    Machine Learning
+                </div>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    Developed a recommendation system to suggest relevant
+                    products based on user preferences and product information.
+                </li>
+
+                <li>
+                    Applied data preprocessing and recommendation techniques
+                    to improve personalized product suggestions.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="project">
+
+            <div class="bold">
+                Digital Will and Asset Nominee System
+            </div>
+
+
+            <ul>
+
+                <li>
+                    Designed a digital system concept for securely managing
+                    wills, assets, and nominee information.
+                </li>
+
+                <li>
+                    Worked on system requirements, documentation, and secure
+                    asset-management concepts.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Project 3 -->
+
+        <div class="project">
+
+            <div class="row">
+
+                <div class="left bold">
+                    LPG Leakage Detection System
+                </div>
+
+                <div class="right italic">
+                    IoT Project
+                </div>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    Developed an LPG leakage detection prototype using an
+                    MQ-2 gas sensor and Arduino.
+                </li>
+
+                <li>
+                    Implemented an alert mechanism to identify potentially
+                    unsafe gas leakage conditions.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         EDUCATION -- LAST
+    ========================= -->
+
+    <div class="section education">
+
+        <h2 class="section-title">
+            EDUCATION
+        </h2>
+
+        <hr class="section-line">
+
+
+        <div class="row">
+
+            <div class="left bold">
+                Poornima College of Engineering, Jaipur
+            </div>
+
+            <div class="right italic">
+                2024 -- Present
+            </div>
+
+        </div>
+
+
+        <div>
+            B.Tech. in Computer Science Engineering
+        </div>
+
+
+        <br>
+
+
+        <div class="row">
+
+            <div class="left bold">
+                Calvary Mission Hr. Sec. School, Jammu, Vijaypur
+            </div>
+
+            <div class="right bold">
+                2024
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="left">
+                Senior Secondary (Class 12)
+            </div>
+
+            <div class="right bold">
+                79%
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
+```
